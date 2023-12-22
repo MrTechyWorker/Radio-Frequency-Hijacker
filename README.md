@@ -28,9 +28,9 @@ Nowadays machines use much higher or lower frequency which cannot be captured ea
  - Connect DAT pin of receiver to GPIO 27 and transmitter pin to GPIO 22
 # Receiving
 Run the command:
-
-" rpi-rf_receive "
-
+```
+rpi-rf_receive 
+```
 This will display all the sourrouding RFs
 
 ![rec](https://github.com/MrTechyWorker/Radio-Frequency-Hijacker/assets/75602943/2bfcd858-82f5-47cd-91c0-f0086018b63d)
@@ -40,8 +40,9 @@ In my case, the highlighted one is what I need.
 
 # Transmitting
 Run the command:
-
-" rpi-rf_send -g "GPIO" -p "pulsestrength" -t "protocol" "CODE" "
+```
+rpi-rf_send -g "GPIO" -p "pulsestrength" -t "protocol" "CODE"
+```
 
  - Make sure you replace the quoted arguments as per your need. In my case the code will be... rpi-rf_send -g 17 -p 1024 -t 4 4096.
 
